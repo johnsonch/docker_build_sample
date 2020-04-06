@@ -2,8 +2,11 @@ version: 2.1
 
 jobs:
   build:
+    docker:
+      - image: docker:17.05.0-ce-git
     steps:
       - checkout
+      - setup_remote_docker
       - run:
           name: build
           command: docker build -t johnsnch/ruby:2.1.2
