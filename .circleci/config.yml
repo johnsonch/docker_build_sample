@@ -12,3 +12,9 @@ jobs:
           command: |
             docker run --rm johnsonch/ruby:2.1.2 \
             bash -c 'ruby --version'
+
+workflows:
+  version: 2
+  main:
+    jobs:
+      - build
