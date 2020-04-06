@@ -9,7 +9,7 @@ jobs:
       - setup_remote_docker
       - run:
           name: build
-          command: docker build -t johnsnch/ruby:2.1.2 .
+          command: docker build -t johnsonch/ruby:2.1.2 .
       - run:
           name: verify
           command: |
